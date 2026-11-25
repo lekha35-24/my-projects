@@ -1,0 +1,188 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+:root{
+     --ff-design: "Satisfy", cursive;
+   --ff-normal: "Margarine", sans-serif;
+   --ff-formal:"Roboto", sans-serif;
+}
+body{
+   background-color: black;
+   
+}
+.container{
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+      display: flex;
+    justify-content: flex-end;
+ align-items: end;
+ 
+}
+.content{
+   display: flex;
+    background-color: white;
+    height: 100%;
+    width: 40%;
+   position: absolute;
+   top: 0px;
+    border-radius: 10px;
+    border: none;
+    flex-direction:column;
+    padding: 10px;
+ 
+}
+#h1{
+    background-image: linear-gradient(180deg,midnightblue,darkblue,rgb(192, 8, 131),rgb(240, 40, 73));
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 500;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-shadow: 1px 5px 10px rgb(20, 24, 240);
+
+}
+.content form{
+    margin-top: 30px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+   
+}
+.input{
+    text-align: center;
+    height: 25px;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    font-weight: 300;
+    font-size: 25px;
+    font-family: var(--ff-design);
+    text-transform: capitalize;
+    color: black;
+    cursor: pointer;
+    transition: .7s;
+    border-radius: 30px;
+   border: 5px solid transparent;
+   background:linear-gradient(whitesmoke,whitesmoke) padding-box,linear-gradient( 90deg,midnightblue,darkblue,blue,rgb(219, 13, 106),rgb(92, 4, 19))border-box ; 
+  outline: none;
+}
+/* first padding box---white,then border box--linear gradient*/
+#address{
+    height: 80px;
+    width: 400px;
+    color: rgb(12, 52, 161);
+    font-size: larger;
+    font-family: var(--ff-design);
+    padding: 5px;
+    margin: 10px;
+    background: linear-gradient(white,white)padding-box,linear-gradient(90deg,midnightblue,darkblue,blue,rgb(219, 13, 106),rgb(92, 4, 19) )border-box;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    resize: none;
+    outline: none;
+
+}
+
+#address:placeholder-shown{
+text-align: center;
+
+}
+#signin{
+    text-align: center;
+    color: aliceblue;
+    background-image: linear-gradient(90deg,blue,rgb(21, 174, 235),rgb(238, 10, 98));
+    border: none;
+    outline-offset: 2px solid rgb(109, 6, 23);
+    border-radius: 50px;
+    height: 70px;
+    width: 80%;
+    margin-top: 5px;
+      box-shadow: 10px 10px 20px blue;
+}
+.input:hover{
+    transform: scale(1.1);
+    overflow: hidden;}
+
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+.box{
+    background-image: linear-gradient(90deg,midnightblue,rgb(201, 51, 133));
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+     text-transform: capitalize;
+    
+}
+.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left:10%;
+}
+.box h1{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 80px;
+  
+}
+.box h2{
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 500;
+}
+.mail{
+    background-image: linear-gradient(white,white);
+    background-clip: text;
+    text-transform: lowercase;
+    margin-top: 25px;
+    letter-spacing:1px;
+}
+.label{
+    position: relative;
+    right:45%;
+   z-index: 1;
+    padding: 10px;
+    margin-top: -5px;
+   color: blue;
+  
+}
+.iconpng svg{
+    
+    height: 20px;
+    width: 20px;
+ background:linear-gradient( 180deg,blue,rgb(216, 53, 80));
+  fill: blue;
+    border: none;
+  
+}
+
+.label svg{
+
+   margin-left: 2px;
+   margin-bottom: -3px;
+}
+.input:focus ~ .label,.input:valid~ .label{
+    top:-30px;
+    right:60%;
+ background-color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 30px;
+    margin: 2px;padding: 2px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+ 

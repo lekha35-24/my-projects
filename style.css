@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root{
+   --ff-primary: "Satisfy", cursive;
+   --ff-second: "Margarine", sans-serif;
+   --ff-third:"Roboto", sans-serif;
+}
+body{
+  background-image: url(LOGIN.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.CONTAINER{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.loginpg{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background: transparent;
+  border: 2px solid white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  border-radius: 50px;
+  backdrop-filter:blur(2px);
+   top: 100px;
+   left: 10px;
+   box-shadow: 10px 10px  20px aqua;
+}
+#topic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  height: 70px;
+  width: 150px;
+  background-color: silver;
+  color: rgb(48, 48, 46);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: cursive;
+}
+#topic::before{
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  border-top-right-radius: 50%;
+  background: transparent;
+  box-shadow: 15px 0 0 0 silver;
+}
+#topic::after{
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 0px;
+right: -30px;
+  border-top-left-radius: 50%;
+  background: transparent;
+  box-shadow: -15px 0 0 0 silver;
+}
+.INPUT input{
+  background: transparent;
+  outline: none;
+  border-radius: 20px;
+ cursor: pointer;
+  position: absolute;
+  text-align: center;
+   height: 50px;
+ width: 80%;
+ left: 50px;
+
+ font-size: 20px;
+cursor: pointer;  
+}
+#user {
+top:25% ;
+font-family: var(--ff-primary);
+ color: azure;
+
+}
+#key,#user:placeholder-shown{
+font-family:var(--ff-primary);
+text-transform: capitalize;
+letter-spacing: 1px;
+
+}
+#key{
+  top:40%;
+  color: azure;
+  
+}
+.rem-forget{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   position: absolute;
+   top: 50%;
+   width: 80%;
+   left: 50px;
+   margin-top: 20px;
+   padding: 5px 2px;
+}
+.remember{
+  color: rgb(177, 162, 162);
+  padding-left: 2px;
+}
+.forgot a{
+ color: aqua;
+
+}
+.register{
+  font-size: 20px;
+  color: beige;
+  position: absolute;
+  margin-top: 10px;
+  top:80%;
+  left: 50px;
+}
+.register a {
+  color: rgb(13, 144, 219);
+  padding-left: 5px;
+  text-decoration: dotted;
+}
+#btn input{
+  bottom: 20%;
+  left: 50px;
+  position: absolute;
+  height: 50px;
+  width: 80%;
+  background-color: aqua;
+  border-radius: 20px;
+  font-family: var(--ff-primary);
+  text-transform: capitalize;
+  font-size: 30px;
+  text-align: center;
+  padding: 2px;
+  padding-bottom: 2px;
+  color: rgb(229, 240, 240);
+  letter-spacing: 2px;
+transition: .3s;
+outline: none;
+border: none;
+}
+#btn:hover input{
+  cursor: pointer;
+ background-color: rgb(61, 226, 204);
+ transform: scale(1.09);
+}
+
